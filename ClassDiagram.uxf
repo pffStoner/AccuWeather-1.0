@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>720</x>
+      <y>120</y>
+      <w>250</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>AccuWeatherController
+(clsss)
+--
+(properties)
++ApiKey : string 
++Mtric : bool
++Daily : bool
++SearchValie : string 
++CityCode : string 
++CityCodeByIp : bool
+--
+(methods)
+- GetUrl() : string 
+- GetUrlByIP() : string 
+-GetForecastJson() : string 
++GetForecast() : Forecast 
+-GetExternalIP() : string
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>290</x>
+      <y>310</y>
+      <w>140</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Forecast
+(class)
+--
++Html : string</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>340</y>
+      <w>320</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>300.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
